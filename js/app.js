@@ -138,3 +138,9 @@ var person = {
 };
 
 _.extend(person,Backbone.events);
+
+person.on('walking',function (){
+    console.log("he is sleepwalking")
+});
+
+person.walk();
